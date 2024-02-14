@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Oblig1</title>
+  <script src="index.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+
+
+<h1>Bestilling av kinobiletter</h1>
+<!--tr = table row & td = table data-->
+<table>
+  <tr>
+    <td class="tag">Velg Film:</td>
+    <td>
+      <select id="velgFilm">
+        <option value="" disabled selected> Velg film </option>
+        <option> Harry Potter 1 </option>
+        <option> The Hunger Games </option>
+        <option> Saltburn </option>
+      </select>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="tag">Antall</td>
+    <td>
+      <form><input type="number" id="antallPersoner" min="0"></form>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="tag">Fornavn</td>
+    <td>
+      <form><input type="text" name="input" id="fornavn"></form>
+    </td>
+    <td><p id="fornavnValideringsmelding"></p></td>
+  </tr>
+
+  <tr>
+    <td class="tag">Etternavn</td>
+    <td>
+      <form><input type="text" name="input" id="etternavn"></form>
+    </td>
+    <td><p id="etternavnValideringsmelding"></p></td>
+
+  </tr>
+
+  <tr>
+    <td class="tag">Epost</td>
+    <td>
+      <form><input type="email" name="input" id="epost"></form>
+    </td>
+    <td><p id="epostValideringsmelding"></p></td>
+
+  </tr>
+
+  <tr>
+    <td class="tag">TelefonNr</td>
+    <td>
+      <label for="nummer"></label>
+      <form><input type="text" name="input" id="nummer"></form>
+    </td>
+    <td><p id="nummerValideringsmelding"></p></td>
+
+  </tr>
+
+  <tr>
+    <td>
+      <button onclick="kjopBillettKnap()" id="kjopBillett">Kjøp billett</button>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <h2>Alle billetter</h2>
+      <div id="output"></div>
+    </td>
+  </tr>
+
+  <tr>
+    <td><button onclick="slettBilletter()" id="slett">Slett alle billetter</button></td>
+  </tr>
+
+
+</table>
+
+</body>
+</html>
