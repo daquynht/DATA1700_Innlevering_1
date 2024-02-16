@@ -100,7 +100,6 @@ function kjopBillettKnap() {
     inputValidering();
     opprettBillett();
 }
-
 function slettBilletter() {
     //den eksisterende variabelen billetter får et nytt tomt array
     billetter = [];
